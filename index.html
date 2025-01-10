@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bare lige en enkelt mere 🍺</title>
+    <!-- Add your CSS files here -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="assets/oel.png" id="logo"><span class="pl-1 logo-text">en mere tak</span>
+            </a>
+        </div>
+
+    </nav>
+    <section class=" top-section section" id="header">
+            <div class="header-wrapper">
+                <div class="columns is-centered">
+                    <div class="column is-three-fifths">
+                        <div>
+                                <figure class=" image is-96x96 logo">
+                                    <img id="logo" class="image is-96x96 logo" src="/assets/oel.png" alt="Placeholder image">
+                                </figure>
+                        </div>
+                        <div class="title is-size-2 has-text-weight-bold">
+                            Når man bare lige har behov for en ekstra. Ikke så mange dikkedarer. Følg min app at få adgang til din næste fest. Det skulle jo gerne være nemt.
+                        </div>
+                    </div>
+                </div>  
+                <div class="columns is-centered">
+                    <div class="column is-three-fifths">
+                        <div class="is-flex">
+                            <button class="button is-rounded is-large is-align-self-center">Gå til app</button>
+                            <div class="pl-4 is-size-6 has-text-weight-light is-align-self-center">
+                                Husk at drikke med mådehold
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="section" id="header">
+        <div class="columns is-centered">
+            <div class="column is-three-fifths">
+               <div class="title">Beskrivelse</div>
+                <div class="is-size-4">Konceptet med denne her app er egentlig såre simpelt. Hvad skal man gøre hvis man en sen aften ikke ved hvor man skal gå hen? Så vil det nemmeste jo klart være at finde den første det bedste sted.
+               </div>
+            </div>
+        </div>  
+    </section>
+    <!-- Add your JavaScript files here -->
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const navbarHeight = navbar.getBoundingClientRect().height;
+
+        window.addEventListener('scroll', function() {
+            // add padding top to show content behind navbar
+            if (window.scrollY > navbarHeight) {
+                navbar.classList.add('navbar-white');      //adding CSS effect
+            // remove padding top from body        
+            } else {
+                navbar.classList.remove('navbar-white');  // removing CSS effect
+            } 
+        });
+    </script>
+</body>
+</html>

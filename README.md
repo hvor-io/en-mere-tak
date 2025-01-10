@@ -8,38 +8,38 @@
   <br>
 </p>
 <p align="center">
-  <em><b>En mere tak!</b> Når du desperat har brug for en ekstra opfyldning... </em>
+  <em><b>En mere tak!</b> Når du har brug for en ekstra opfyldning... </em>
 </p>
-
----
----
 
 ### App'en er under udvikling! 🥳 🚀
 
-
----
-<br>
-
 # 🧐 Projektbeskrivelse
+Et projekt udviklet for at fikse et klart hul i markedet. Eller måske fordi det virkede som en sjov idé.
 
+Projektet bygger på 
 
 # 👨‍💻 Tech stack
-
-Here's a brief high-level overview of the tech stack the Well app uses:
+Et hurtigt overblik over de teknologier der går ind i projektet:
 
 - DigitalOcean
 - Python
-- Flask
-- Postgres
+- PostgreSQL / Postgis
+- DuckDB
 - FastAPI
 
-# ✍️ Contributing
+Størstedelen af rutelogikken er opbygget ved hjælp af pgRouting tilføjelsen til Postgresql og Postgis. Hertil bruges nogen indbyggede rutealgoritmer der gør det muligt at tilføje nodes i sit netværk on-the-fly. 
 
-<br />
+Python binder som sædvanlig det hele sammen
 
----
+FastAPI bruges til at koble frontend sammen med backend. 
 
-<br />
+Opdatering af data foregår nu vha. DuckDB der har en indbygget metode til at arbejde med OSM data. Tidligere skulle der bruges en række værktøjer der hovedsageligt virker fra Ubuntu såsom Osmium.
+
+Data er udelukkende leveret af Openstreet Map <3
+
+# ✍️ To do
+* Færdiggør UI
+*
 
 # 💛
-Lavet med al kærlighed
+Også lavet med kærlighed
