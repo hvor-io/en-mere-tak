@@ -16,7 +16,7 @@
     <nav class="navbar is-fixed-top">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
-                <img src="assets/oel.png" id="logo"><span class="pl-1 logo-text">en mere tak</span>
+                <img src="assets/oel.png" id="logo"><span class="pl-1 logo-text">En mere tak</span>
             </a>
         </div>
 
@@ -26,12 +26,13 @@
                 <div class="columns is-centered">
                     <div class="column is-three-fifths">
                         <div>
-                                <figure class=" image is-96x96 logo">
+                                <!--<figure class=" image is-96x96 logo">
                                     <img id="logo" class="image is-96x96 logo" src="/assets/oel.png" alt="Placeholder image">
-                                </figure>
+                                </figure>-->
+                                <p class="" style="font-size: 5rem;">🥳</p>
                         </div>
-                        <div class="title is-size-2 has-text-weight-bold">
-                            Når man bare lige har behov for en ekstra. Ikke så mange dikkedarer. Følg min app at få adgang til din næste fest. Det skulle jo gerne være nemt.
+                        <div class="title is-size-2 has-text-weight-normal">
+                            Når man bare lige har behov for <span class="logo-text">en mere</span>. Ikke så mange dikkedarer. Appen viser dig din næste fest. Nemt.
                         </div>
                     </div>
                 </div>  
@@ -51,9 +52,17 @@
     <section class="section" id="header">
         <div class="columns is-centered">
             <div class="column is-three-fifths">
-               <div class="title">Beskrivelse</div>
-                <div class="is-size-4">Konceptet med denne her app er egentlig såre simpelt. Hvad skal man gøre hvis man en sen aften ikke ved hvor man skal gå hen? Så vil det nemmeste jo klart være at finde den første det bedste sted.
-               </div>
+               <p class="title">Hvad er det her?</p>
+                <p class="is-size-5">Et meget ungt indfald. Sad og legede med en stor mængde ruteberegninger og tænkte på en situation jeg ofte har fundet mig selv i. Hvad vil man gøre hvis man en sen aften ikke ved hvor man skal gå hen?</p>
+                <br>
+                <p class="is-size-5">De sjoveste projekter opstår ofte fra egne behov :). I den her version er det alkohol der er i fokus, men det kunne være hvad som helst (🥡, 🎭 eller 🚌)</p>
+                <br>
+                <p class="title">Hvordan er den lavet?</p>
+                <p class="is-size-5">I virkeligheden er der ikke mange forskellige tekniske løsninger. Det har bare været en lang proces at komme i mål med alligevel og endte med følgende kombination af teknologier  :</p>
+                <ol type="a">
+                    <li><b>Ruteberegningerne:</b> Kort sagt først vha. pgRouting og dernæst vha. OSRM. Langt sagt: Først brugte jeg sindssygt lang tid på at lave det i postgis. Det vigtigste for mig var at der var to specifikke funktionaliteter. (1) Afstanden fra adressepunktet (en lokation eller et adressenummer) skulle vises og bruges i beregningen og (2) det skulle være muligt at opdatere den underliggende graf on-the-fly. pgRouting gav mulighed for en detaljeret styring men viste sig at spise alt for mange timer. Så derfor endte det med at jeg deployede min egen OSRM (skulle nok bare have brugt en online ruteservice) <span style="font-size: 0.5rem">se mere i den tekniske dokumentation</span></li>
+                    <li><b>Datagrundlag og -behandling:</b> Som sædvanlig kommer OpenStreetMap til min redning. På sigt vil jeg gerne forædle data hvor de forskellige metadata mangler - for at give lidt tilbage du ved. Først var det også relativt besværligt men efter at DuckDB kom ind i mit liv blev det hele meget nemmere</li>
+                </ol>
             </div>
         </div>  
     </section>

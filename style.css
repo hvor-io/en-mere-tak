@@ -6,19 +6,18 @@
   --primary-03: #b7a198;
 
 }
-@font-face { font-family: enmeretak; src: url('assets/CosmicLager-Regular.woff2'); } 
 
-
-#map {
-  height: 600px;
-  border: 1px black solid;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  border-radius: 4px;
+@font-face {
+  font-family: enmeretak;
+  src: url("/assets/Bubble Garden Regular.ttf");
 }
-
 
 html {
     font-family: Barlow !important;
+}
+
+li {
+  margin: 40px;
 }
 
 body {
@@ -40,7 +39,7 @@ body {
 }
 
 .top-section {
-  height: 120vh;
+  height: 100vh;
   background-color: var(--primary);
 }
 
@@ -48,20 +47,6 @@ body {
   background-color: var(--primary);
 }
 
-#header{
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" transform="scale(-1,-1)" viewBox="0 0 1000 100" fill="%23fff"><path d="M0 100V0h1000v4L0 100z"></path></svg>');
-position: relative;
-  background-repeat: no-repeat;
-  background-position: bottom, center;
-}
-
-#footer{
-  /*background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" transform="scale(-1,-1)" viewBox="0 0 1000 100" fill="%23ffd3a4"><path d="M0 100V0h1000v4L0 100z"></path></svg>');
-  */
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 
 #logo {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
